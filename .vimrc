@@ -78,3 +78,5 @@ set showcmd
 set tags=tags;
 set autochdir
 autocmd FileType python,php,html,css,javascript setlocal et sta sw=4 sts=4
+set completeopt=menuone,preview
+nmap <F4> :pc<CR>
