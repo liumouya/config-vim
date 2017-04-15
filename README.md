@@ -1,13 +1,13 @@
 # config-vim
 .vimrc文件是vim的配置文件。
-# 安装步骤：
-1. 安装Vundle
+## 安装步骤：
+### 1. 安装Vundle
 
 [Vundle在GitHub上的URL](https://github.com/VundleVim/Vundle.vim)
 
 `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
-2. 修改.vimrc
+### 2. 修改.vimrc
 
 ```vim
 set encoding=utf-8 fileencodings=ucs-bom,utf-8,gbk,cp936
@@ -91,7 +91,7 @@ set tags=tags;
 set autochdir
 autocmd FileType python,php,html,css,javascript setlocal et sta sw=4 sts=4
 ```
-3. 开始安装插件
+### 3. 开始安装插件
 
 进入VIM然后:PluginInstall
 
