@@ -1,5 +1,5 @@
 # config-vim
-.vimrc文件是vim的配置文件。
+~/.vimrc文件是vim的配置文件。
 ## 安装步骤：
 ### 1. 安装Vundle
 
