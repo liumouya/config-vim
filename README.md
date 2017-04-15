@@ -7,7 +7,7 @@
 
 `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
-### 2. 修改.vimrc
+### 2. 修改~/.vimrc
 
 ```vim
 set encoding=utf-8 fileencodings=ucs-bom,utf-8,gbk,cp936
