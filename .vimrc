@@ -19,6 +19,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tComment'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'Yggdroot/indentLine'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
