@@ -45,6 +45,9 @@ Plugin 'tComment'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'Yggdroot/indentLine'
 Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-surround'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -156,6 +159,12 @@ Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'Yggdroot/indentLine'
 " go语言工具包
 Plugin 'fatih/vim-go'
+" 快速修改环绕符号，如'"()[]{}<>
+Plugin 'tpope/vim-surround'
+" 自动生成配对符号，如'"()[]{}<>
+Plugin 'jiangmiao/auto-pairs'
+" 多光标同时编辑
+Plugin 'terryma/vim-multiple-cursors'
 
 " vundle配置
 " All of your Plugins must be added before the following line
