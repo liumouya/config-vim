@@ -87,8 +87,9 @@ let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
 let g:airline_symbols.maxlinenr = '⭡'
 let g:airline#extensions#tabline#enabled = 1
-nnoremap <C-N> :bn<CR>
-nnoremap <C-P> :bp<CR>
+nnoremap <F5> :bn<CR>
+nnoremap <F6> :bp<CR>
+nnoremap <F7> :bd<CR>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -209,9 +210,10 @@ let g:airline_symbols.linenr = '⭡'
 let g:airline_symbols.maxlinenr = '⭡'
 let g:airline#extensions#tabline#enabled = 1
 
-" 设置Ctrl+n和Ctrl+p为buffer切换的快捷键
-nnoremap <C-N> :bn<CR>
-nnoremap <C-P> :bp<CR>
+" 设置F5和F6为buffer切换的快捷键，F7为删除buffer的快捷键
+nnoremap <F5> :bn<CR>
+nnoremap <F6> :bp<CR>
+nnoremap <F7> :bd<CR>
 
 " 语法检测插件syntastic的显示设置
 set statusline+=%#warningmsg#
