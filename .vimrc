@@ -20,6 +20,9 @@ Plugin 'tComment'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'Yggdroot/indentLine'
 Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-surround'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -59,8 +62,9 @@ let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
 let g:airline_symbols.maxlinenr = '⭡'
 let g:airline#extensions#tabline#enabled = 1
-nnoremap <C-N> :bn<CR>
-nnoremap <C-P> :bp<CR>
+nnoremap <F5> :bn<CR>
+nnoremap <F6> :bp<CR>
+nnoremap <F7> :bd<CR>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
