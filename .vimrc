@@ -23,6 +23,7 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'shawncplus/phpcomplete.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -83,5 +84,5 @@ set showcmd
 set tags=tags;
 set autochdir
 autocmd FileType python,php,html,css,javascript setlocal et sta sw=4 sts=4
-set completeopt=menuone,preview
-nmap <F4> :pc<CR>
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
