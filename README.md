@@ -48,6 +48,7 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'shawncplus/phpcomplete.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -108,8 +109,8 @@ set showcmd
 set tags=tags;
 set autochdir
 autocmd FileType python,php,html,css,javascript setlocal et sta sw=4 sts=4
-set completeopt=menuone,preview
-nmap <F4> :pc<CR>
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 ```
 ### 3. 开始安装插件
 
@@ -166,6 +167,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
 " 多光标同时编辑
 Plugin 'terryma/vim-multiple-cursors'
+" PHP补全插件
+Plugin 'shawncplus/phpcomplete.vim'
 
 " vundle配置
 " All of your Plugins must be added before the following line
@@ -240,8 +243,7 @@ set tags=tags;
 set autochdir
 " 这些类型的文件tab缩进键转换为4个空格
 autocmd FileType python,php,html,css,javascript setlocal et sta sw=4 sts=4
-" omni补全时上方函数说明窗口的设置
-set completeopt=menuone,preview
-" 设置F4为关闭omni补全时上方出现的函数说明框的快捷键
-nmap <F4> :pc<CR>
+" 自动离开补全时的函数提示窗口
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 ```
